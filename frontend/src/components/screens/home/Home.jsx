@@ -16,8 +16,8 @@ export default function Home() {
             try {
                 document.body.classList.add('updating');
                 const url = id 
-                    ? `http:///cars/brands/${id}`
-                    : 'http:///cars';
+                    ? `cars/brands/${id}`
+                    : '/cars';
 //                     ? `http://localhost:8000/cars/brands/${id}`
 //                     : 'http://localhost:8000/cars';
 
@@ -45,7 +45,7 @@ export default function Home() {
  useEffect(() => {
         const fetchBrands = async () => {
             try {
-                const response = await fetch('http://localhost:8000/cars/brand');
+                const response = await fetch('cars/brand');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
