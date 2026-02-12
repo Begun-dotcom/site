@@ -16,8 +16,11 @@ export default function Home() {
             try {
                 document.body.classList.add('updating');
                 const url = id 
-                    ? `http://localhost:8000/cars/brands/${id}`
-                    : 'http://localhost:8000/cars';
+                    ? `http:///cars/brands/${id}`
+                    : 'http:///cars';
+//                     ? `http://localhost:8000/cars/brands/${id}`
+//                     : 'http://localhost:8000/cars';
+
                 
                 console.log(`Fetching from: ${url}`);
                 
