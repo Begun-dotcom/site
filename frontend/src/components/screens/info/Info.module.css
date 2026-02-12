@@ -1,0 +1,25 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: "header header header" 
+    "asideleft main asideright"; 
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 2fr 8fr 2fr;
+    height: 100vh;
+}
+
+.main {
+    background-color: #2e7d32;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    color:white;
+    text-align: center;
+    padding: 7px;
+    
+    }
